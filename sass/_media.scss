@@ -199,6 +199,10 @@
         }
     } 
     .car{
+        min-height: 350px;
+        &_wrapper1{
+            min-height: 50%;
+        }
         img{
             width: 500px;
         }
