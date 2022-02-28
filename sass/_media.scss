@@ -1,0 +1,402 @@
+@media (max-width: 1200px){
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        &_item{
+            a{
+                padding-right: 11px;
+            }
+        }
+        &_link{
+            font-size: 12px;
+        }
+    }
+    .subheader{
+        margin-top: 52px;
+        &_call{
+            text-align: right;
+        }
+        &_text{
+            font-size: 12px;
+        }
+        &_phone{
+            font-size: 21px;
+        }
+
+    }
+    .promo{
+        &_header{
+            font-size: 41px;
+            padding-bottom: 20px;
+        }
+        &_subheader{
+            padding-bottom: 10px;
+            font-size: 26px;
+        }
+        &_btn{
+            margin: 50px auto 0 auto;
+        }
+    }
+    .benefits{
+        &_section{
+            flex-direction: column;
+            align-items: center;
+        }
+        &_text{
+            margin-top: 20px;
+            width: 315px;
+        }
+    }
+    .mobile{
+        &_subheader{
+            font-size: 16px;
+        }
+        &_item{
+            width: 290px;
+        }
+    }
+    .footer{
+        &_links{
+            img{
+                width: 200px;
+            }
+        }
+    }   
+}
+@media (max-width: 921px){
+    nav{
+        padding: 15px 0;
+    }
+    .menu{
+        &_link{
+            font-size: 10px;
+            padding-right: 10px;
+        }
+    }
+    .promo{
+        &_btn{
+            height: 55px;
+            margin-top: 100px;
+        }
+    }
+    .car{
+        img{
+            width:700px
+        }
+    }
+    
+    .subheader{
+        &_logo{
+            img{
+                width: 100%;                }
+            }
+        &_phone{
+            font-size: 20px;
+        }
+        &_text{
+            font-size: 12px;
+        }
+    
+    }
+    .footer{
+        &_wrapper_1{
+            width: 250px;
+            a{
+                font-size: 11px;
+            }
+        }
+        &_wrapper_2{
+            width: 250px;
+            &_menu_2{
+                flex-wrap: wrap;
+                justify-content: center;
+                a{
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px){
+    header{
+        nav{
+            padding: 27px 0;
+        }
+    }
+    .menu{
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top:0;
+        left: -100%;
+        width: 50%;
+        height: 100vh;
+        background: rgba(0, 0, 0, .8);
+        padding: 20px 15px;
+        transition: 0.6s all;
+        &_active{
+            left:0;
+        }
+        &_item{
+            margin-top: 10px;
+            padding-right: 0;
+            border: 0;
+        }
+        &_link{
+            padding: 0;
+            font-size: 20px;
+        }
+        
+    }
+    .hamburger{
+        display: block;
+        position: absolute;
+        right: 10px;
+        top:50%;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 12px;
+        span{
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: white;
+            margin-bottom: 3px;
+            transition: 0.5s all;
+        }
+        &_active{
+            span{
+                margin-bottom: -3px;
+                &:nth-child(1){
+                    transform: translateY(3px) rotate(-45deg);
+                }
+                &:nth-child(2){
+                    display: none;
+                }
+                &:nth-child(3){
+                    transform: translateY(3px) rotate(45deg);
+                }
+            }
+        }
+    }
+    .xs_visible{
+        display: none;
+    }
+    .xs_hidden{
+        display: block;
+    }
+    .subheader{
+        &_phone{
+            font-size: 15px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        &_btn{
+            width: 100%;
+            margin-top: 0px;
+        }
+    } 
+    .car{
+        img{
+            width: 500px;
+        }
+    }
+    .footer{
+        &_messengers{
+            flex-wrap: wrap;
+            width: 100px;
+        }
+        &_circle{
+            margin-top: 5px;
+        }
+        &_links{
+            display:none;
+        }
+    }
+}
+@media (max-width: 575px){
+    .menu{
+        width: 85%;
+        &_item{
+            width: 100%;
+            text-align: center;
+            padding: 4px 0;
+        }
+        &_link{
+            display: block;
+        }
+    }
+    .subheader{
+        height: 60px;
+        &_logo{
+            margin-top: 30px;
+        }
+        &_text{
+            display: none;
+        }
+        &_btn{
+            width: 100%;
+            height: 22px;
+            font-size: 10px;
+            margin-top: 5px;
+            font-family: Roboto_Light;
+            text-transform: uppercase;
+        }
+        &_phone{
+            font-size: 12px;
+            margin-top: 22px;
+        }
+    }
+    .car{
+        &_wrapper1{
+            height: 100%;
+        }
+        min-height: 371px;
+        padding: 26px 0 31px 0; 
+        img{
+            margin-top: 34px;
+            width: 300px;
+        }
+        &_header, &_subheader{
+            display: none;
+        }
+        &_descr{
+            color:white;
+            z-index: 2;
+        }
+    }
+    .benefits{
+        &_text{
+            width: 280px;
+        }
+        &_before-header{
+            margin-top: 20px;
+            font-size: 11px;
+            width: 110px;
+            height: 22px;
+            text-transform: uppercase;
+        }
+        &_header{
+            font-size: 16px;
+            text-transform: uppercase;
+            font-family: Roboto-Light;
+        }
+    }
+    .footer{
+        padding-bottom: 30px;
+        .s_visible{
+            display: none;
+        }
+        .s_hidden{
+            display: flex;
+            margin-left: 34px;
+            bottom: 37px;
+            justify-content: center;
+            margin: 0;
+            margin-top: 17px     ;
+            span{
+                color:white;
+            }
+        }
+        .footer_visible{
+            display: none;
+        }
+        .footer_hidden{
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+    }
+    .promo{
+        min-height: 400px;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 34px;
+        &_header{
+            font-size: 30px;
+            padding:0 24px;
+        }
+        &_subheader{
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        &_descr{
+            display: none;
+        }
+        &_btn{
+            margin-top: 72px;
+            width: 210px;
+            height: 50px;
+        }
+    }
+    .mobile{
+        padding: 1px 0 43px 0;
+        &_title{
+            margin-top: 28px;
+        }
+        &_header{
+            margin-top: 16px;
+            font-size: 16px;
+            font-family: Roboto-Light;
+        }
+        &_subheader{
+            margin-top: 5px;
+            margin-bottom: 0;
+            font-size: 14px;
+            font-family: Roboto-Light;
+        }
+    }
+    .require{
+        padding: 24px 0 30px 0;
+        &_header{
+            margin-top: 16px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        &_block{
+            margin: 0px;
+            margin-top: 30px;
+        }
+        &_title{
+            margin-left: 6px;
+            font-size: 16px;
+        }
+        &_list{
+            padding-left: 37px;
+            li{
+                font-size: 14px;
+                width: 100%;
+                margin: 0;
+            }
+        }
+        &_descr{
+            margin-left: 6px;
+            font-size: 14px;
+        }
+    }
+    .world{
+        padding: 26px 0 30px 0;
+        background-size: 321px 360px;
+        background: url(../img/world/world_bg.png) center no-repeat;
+        &_header{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        &_subheader{
+            margin-top: 5px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+}

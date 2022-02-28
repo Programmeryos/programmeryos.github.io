@@ -1,0 +1,249 @@
+.container{
+    width: 1140px;
+}
+header{
+    position: relative;
+    height: 53px;
+}
+header nav {
+    background: #212121;    
+    padding-left: 70px;
+    padding: 14px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.container .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+}
+.container .menu_link{
+    font-family: 'Roboto-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    color:white;
+    text-decoration: none;
+}
+.container .menu_item{
+    border-right: 2px dotted black;
+    padding-right: 28px;
+}
+.container .menu_item:last-child{
+    border-right: none;
+}
+.subheader{
+    margin-top: 53px;
+    position: absolute;
+    width: 100%;
+    min-height: 84px;
+    background: rgba(0, 0, 0, 0.6);
+    mix-blend-mode: normal;
+}
+.subheader .subheader_logo{
+    display: block;
+    margin-top: 16px;
+    max-width: 100%;
+}
+.subheader .subheader_text{
+    margin-top: 6px;
+    font-family: 'Roboto-Light';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 13px;
+    color:white;
+}
+.subheader .subheader_call{
+    margin-top: 22px;
+    font-family: 'Roboto-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    color:white;
+    text-align: right;
+}
+.subheader .subheader_phone{
+    display: block;
+    margin-top: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color:white;
+    text-decoration: none;
+    text-align: right;
+}
+.subheader .subheader_btn{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+    width: 172px;
+    height: 46px;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    border: none;
+    margin-top: 19px;
+}
+
+
+/*-------------------------psection promo----------------------*/
+.promo{
+    background: url(../img/promo-img/promo-bg.png);
+    min-height: 799px;
+}
+.promo .promo_header{
+    margin-top: 118px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 0;
+}
+.promo .promo_subheader{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    color: #FFFFFF;  
+    text-align: center;
+}
+.promo .promo_descr{
+    font-family: 'Roboto-Light';
+    font-style: normal;
+    font-weight: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.promo .promo_btn{
+    display: block;
+    margin: 0 auto;
+    width: 259px;
+    height: 63px;
+    border: none;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+    margin-top: 116px;
+}
+
+/*----------section benefits----------------*/
+.benefits{
+    min-height: 853px;
+    padding-bottom: 41px;
+    margin-bottom: 0;
+}
+.benefits .benefits_before-header{
+    display: block;
+    margin: 0 auto;
+    width: 113px;
+    height: 24px;
+    background-color: black;;
+    font-family: Roboto-Light;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    text-align: center;
+    padding-top: 4px;
+    margin-top: 24px;
+}
+.benefits .benefits_header{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    text-align: center;
+    color: #222222;
+    margin-top: 32px;
+}
+.benefits_sections_wrapper{
+    margin-top: 16px;
+}
+.benefits .benefits_section{
+    display: flex;
+    padding-bottom: 26px;
+}
+.benefits .benefits_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 116px;
+    height: 116px;
+    background: #1EACC7;
+    border-radius: 50%;
+}
+.benefits .benefits_text{
+    max-width: 371px;
+    font-family: Roboto-Light;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 21px;
+    text-align: left;
+    margin-left: 25px;
+}
+.benefits .benefits_text span{
+    font-family: Roboto;
+    color: #1EACC7;
+}
+
+/*-----------------------section opportunities----------------------*/
+
+
+.opportunities{
+    min-height: 864px;
+    background: url(../img/opportunities-img/mobile_bg.png);
+    padding: 58px 0 72px 0;
+}
+.opportunities_name{
+    display: block;
+    margin: 0 auto;
+    padding:5px 0 0 0;
+    text-align: center;
+    width: 112px;
+    height: 24px;
+    font-family: Roboto-Light;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    background-color: black;
+    color:white;
+    text-transform: uppercase;
+}
+.opportunities .opportunities_header{
+    margin-top: 32px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    color:black;
+}
+.opportunities .opportunities_subheader{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 21px;
+    text-align: center;
+    color: #222222;
+}
